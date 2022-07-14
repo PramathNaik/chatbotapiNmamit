@@ -185,6 +185,7 @@ SIMPLE_CHATBOT = {
         ("main.responses.emailidoftheplacementdepartment","emailidoftheplacementdepartment"),
         ("main.responses.placementsessionusuallystart","placementsessionusuallystart"),
         ("main.responses.activitiesconducted","activitiesconducted"),
+        ("main.responses.WhatNmamit","WhatNmamit"),
     ),
 }
 STATIC_ROOT = os.path.join(BASE_DIR,"static")

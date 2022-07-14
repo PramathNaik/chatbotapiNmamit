@@ -1,16 +1,9 @@
-/**
- * Returns the current datetime for the message creation.
- */
- function getCurrentTimestamp() {
+function getCurrentTimestamp() {
 	return new Date();
 }
+var e = document.getElementById("myDIV");
 
-/**
- * Renders a message on the chat screen based on the given arguments.
- * This is called from the `showUserMessage` and `showBotMessage`.
- */
 function renderMessageToScreen(args) {
-	// local variables
 	let displayDate = (args.time || getCurrentTimestamp()).toLocaleString('en-IN', {
 		month: 'short',
 		day: 'numeric',
@@ -19,7 +12,6 @@ function renderMessageToScreen(args) {
 	});
 	let messagesContainer = $('.messages');
 
-	// init element
 	let message = $(`
 	<li class="message ${args.message_side}">
 		<div class="avatar"></div>
@@ -40,9 +32,6 @@ function renderMessageToScreen(args) {
 	messagesContainer.animate({ scrollTop: messagesContainer.prop('scrollHeight') }, 300);
 }
 
-/**
- * Displays the user message on the chat screen. This is the right side message.
- */
 function showUserMessage(message, datetime) {
 	renderMessageToScreen({
 		text: message,
@@ -51,9 +40,6 @@ function showUserMessage(message, datetime) {
 	});
 }
 
-/**
- * Displays the chatbot message on the chat screen. This is the left side message.
- */
 function showBotMessage(message, datetime) {
 	renderMessageToScreen({
 		text: message,
@@ -61,25 +47,41 @@ function showBotMessage(message, datetime) {
 		message_side: 'left',
 	});
 }
+function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+const csrftoken = getCookie('csrftoken');
 
-/**
- * Get input from user and show it on screen on button click.
- */
 $('#send_button').on('click', function (e) {
-	// get and show message and reset input
+	e.display = "block";
 	showUserMessage($('#msg_input').val());
-	$('#msg_input').val('');
-
-	// show bot message
-	setTimeout(function () {
-		showBotMessage("Ruko Zara Sabarkaro!! Mera Developers team Muje bananeme Busy hai");
-	}, 300);
+	$.ajax({
+		type: "POST",
+		headers: {'X-CSRFToken': csrftoken},
+		url: "/bot",
+		data: {
+			"message": $("#msg_input").val(),
+		},
+		success: function (data) {
+			e.display = "none"
+			showBotMessage(data.message)
+			$('#msg_input').val('');
+		},
+	});
 });
 
-
-/**
- * Set initial bot message to the screen for the user.
- */
 $(window).on('load', function () {
 	showBotMessage('Namaste! How Can I Help You');
+	e.style.display = 'block';
 });

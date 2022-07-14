@@ -1,6 +1,8 @@
  function getCurrentTimestamp() {
 	return new Date();
 }
+var x = document.getElementById("myDIV");
+x.style.display = "none";
 function renderMessageToScreen(args) {
 	let displayDate = (args.time || getCurrentTimestamp()).toLocaleString('en-IN', {
 		month: 'short',
