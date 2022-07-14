@@ -7,7 +7,7 @@ from main.models import QNA
 def index(request):
     if request.method == "GET":
         inData = request.GET.get("data")
-        outData = get_object_or_404(QNA,question__iexact = inData)
+        outData = get_object_or_404(QNA,question__icontains = inData)
         obj = {"message":outData.answer}
 
         return JsonResponse(obj)
