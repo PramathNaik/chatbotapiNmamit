@@ -4,6 +4,6 @@ from simple_chatbot.views import SimpleChatbot
 
 
 urlpatterns = [
-    path("", SimpleChatbot.as_view()),
-    path('addxl',views.addxl),
+    path("bot", SimpleChatbot.as_view()),
+    path("",views.index),
 ]
