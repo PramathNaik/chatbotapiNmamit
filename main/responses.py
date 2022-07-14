@@ -1,5 +1,3 @@
-from random import choices
-from secrets import choice
 from simple_chatbot.responses import GenericRandomResponse
 
 
