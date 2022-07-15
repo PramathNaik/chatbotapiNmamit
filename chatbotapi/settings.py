@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-cgkcx0z6dr^y$i_9pvm4pv@4)cjehdu4x!gtgx(wc-38x8&7e_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -35,6 +35,7 @@ ALLOWED_HOSTS = ["*"]
 INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'main',
+    'feedback',
     'keywords',
     'rest_framework',
     'simple_chatbot',
@@ -189,5 +190,5 @@ SIMPLE_CHATBOT = {
     ),
 }
 STATIC_ROOT = os.path.join(BASE_DIR,"static")
-django_heroku.settings(locals())
+#django_heroku.settings(locals())
 #STATICFILES_DIRS = [os.path.join(BASE_DIR,"static"),]

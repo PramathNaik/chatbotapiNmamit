@@ -1,8 +1,8 @@
 function getCurrentTimestamp() {
 	return new Date();
 }
-var e = document.getElementById("myDIV");
-
+var msg = document.getElementById('myDIV');
+msg.style.display = "block"
 function renderMessageToScreen(args) {
 	let displayDate = (args.time || getCurrentTimestamp()).toLocaleString('en-IN', {
 		month: 'short',
@@ -64,8 +64,8 @@ function getCookie(name) {
 const csrftoken = getCookie('csrftoken');
 
 $('#send_button').on('click', function (e) {
-	e.display = "block";
 	showUserMessage($('#msg_input').val());
+	msg.style.display = "block"
 	$.ajax({
 		type: "POST",
 		headers: {'X-CSRFToken': csrftoken},
@@ -74,14 +74,14 @@ $('#send_button').on('click', function (e) {
 			"message": $("#msg_input").val(),
 		},
 		success: function (data) {
-			e.display = "none"
+			msg.style.display = "none"
 			showBotMessage(data.message)
-			$('#msg_input').val('');
 		},
 	});
+	$('#msg_input').val('');
 });
 
 $(window).on('load', function () {
 	showBotMessage('Namaste! How Can I Help You');
-	e.style.display = 'block';
+	msg.style.display = "none"
 });

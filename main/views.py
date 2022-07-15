@@ -1,11 +1,16 @@
 import random
 from django.http import HttpRequest, HttpResponse, JsonResponse
 from django.shortcuts import render, get_object_or_404
-from main.models import QNA
+from feedback.models import feedback
 
 
 # Create your views here.
 def index(request):
+    if request.method == "POST":
+        name = request.POST['name']
+        email = request.POST['email']
+        feedbacks = request.POST['feedback']
+        feedback.objects.create(name=name,email=email,feedback=feedbacks)
     return render(request,"bot.html")
 
 
