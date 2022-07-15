@@ -16,12 +16,25 @@
 		rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 	<!-- custom css -->
 	<link rel="stylesheet" type="text/css" href="static/main.css">
 
 </head>
 
 <body>
+	{% if messages %}
+	<script>
+	{% for message in messages %}
+	swal("Good job!", "{{ message }}", "{% if message.tags %}{{ message.tags }}{% endif %}");
+	
+	
+	{% endfor %}
+	</script>
+	{% endif %}
+
+
 
 	<div class="container">
 
