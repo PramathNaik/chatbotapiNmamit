@@ -7,7 +7,7 @@ class GreetingResponse(GenericRandomResponse):
 class GoodbyeResponse(GenericRandomResponse):
     choices = ("See you later.",
                "Thanks for visiting.",
-               "See ya! Have a nice day.")
+               "See ya! Have a nice day.",)
 class LocatedResponse(GenericRandomResponse):
     choices = ("It is located in NMAM Institute of Technology Nitte  Karkala Taluk Udupi 574110,Karnataka, India.",)
 class establishedResponce(GenericRandomResponse):
@@ -37,7 +37,7 @@ class CanteenFacilities(GenericRandomResponse):
 class HealthcareFacilities(GenericRandomResponse):
     choices = ("Medicare Scheme entitles every student to Medical and Dental treatment. The campus has a medical centre with a qualified physician and trained nurse to treat staff.Medical Centre Timings.Monday to Friday - 9.00 am to 1.00 pm AND 2.00 pm to 4.30 pm,24 hours Ambulance service is available for the students during emergency,Contact Phone No : 08258- 281263",)
 class contactNumber(GenericRandomResponse):
-    choices = ("91-8258-281039")
+    choices = ("91-8258-281039",)
 class CampusContacts(GenericRandomResponse):
     choices = ("Dean (Admissions): krshetty@nitte.edu.in,Registrar : reg_nitte@nitte.edu.in | Chief Warden : chiefwarden@nmamit.in | Vice Principal and Dean (Academics) :  viceprincipal.nmamit@nitte.edu.in | Public Relations Officer : krishnaraja@nitte.edu.in| Exam : coe.nmamit@nitte.edu.in | Student Welfare Officer : poojari.shekar@nitte.edu.in",)
 class Btechprogrammes(GenericRandomResponse):
