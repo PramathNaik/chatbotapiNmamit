@@ -22,10 +22,8 @@ function renderMessageToScreen(args) {
 	</li>
 	`);
 
-	// add to parent
 	messagesContainer.append(message);
 
-	// animations
 	setTimeout(function () {
 		message.addClass('appeared');
 	}, 0);
@@ -75,7 +73,8 @@ $('#send_button').on('click', function (e) {
 		},
 		success: function (data) {
 			msg.style.display = "none"
-			showBotMessage(data.message)
+			showBotMessage(data.message);
+			speakthis(data.message);
 		},
 	});
 	$('#msg_input').val('');
@@ -94,3 +93,7 @@ input.addEventListener("keypress", function(event) {
     document.getElementById("send_button").click();
   }
 });
+function speakthis(data) {
+	var msg = new SpeechSynthesisUtterance(data);
+	window.speechSynthesis.speak(msg);
+}
