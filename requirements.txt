@@ -12,3 +12,4 @@ regex==2022.7.9
 sqlparse==0.4.2
 tqdm==4.64.0
 whitenoise==6.2.0
+gunicorn
