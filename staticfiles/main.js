@@ -74,6 +74,7 @@ $('#send_button').on('click', function (e) {
 		success: function (data) {
 			msg.style.display = "none"
 			showBotMessage(data.message);
+			
 			speakthis(data.message);
 		},
 	});
@@ -94,6 +95,10 @@ input.addEventListener("keypress", function(event) {
   }
 });
 function speakthis(data) {
-	var msg = new SpeechSynthesisUtterance(data);
-	window.speechSynthesis.speak(msg);
+	var check = document.getElementById("checkbox").checked;
+	if(check){
+		var msg = new SpeechSynthesisUtterance(data);
+		window.speechSynthesis.speak(msg);
+	}
+
 }
