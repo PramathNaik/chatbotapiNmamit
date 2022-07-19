@@ -166,4 +166,3 @@ class roboHod(GenericRandomResponse):
     choices = ("Dr. MURALIDHARA you can contact him at  drmuralidhara@nitte.edu.in",)
 class creaters(GenericRandomResponse):
     choices = ("If I were you, I would go to the info of the page and look there! ",)
-
