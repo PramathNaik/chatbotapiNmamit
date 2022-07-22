@@ -71,6 +71,7 @@ const csrftoken = getCookie('csrftoken');
 
 
 $('#send_button').on('click', function (e) {
+	if($('#msg_input').val()){	
 	showUserMessage($('#msg_input').val());
 	msg.style.display = "block"
 	$.ajax({
@@ -87,6 +88,7 @@ $('#send_button').on('click', function (e) {
 			speakthis(data.message);
 		},
 	});
+	}
 	$('#msg_input').val('');
 });
 
@@ -153,8 +155,5 @@ function speakthis(data) {
 	  interim_transcript = ""
 	};
   
-	$('#speachRec').on('click'), function (e) {
-		speechRecognition.start();
-	};
 
 
