@@ -29,8 +29,11 @@ SIMPLE_CHATBOT = {
 ## Database Models
 
 ```Pattern``` - message which might be send by a user. Add a tag to the pattern for being able to identify and response to that message
-```Tag``` - includes information about Response class for a specific method
+
+```Tag``` - includes information about Response class for a specific method.
+
 ```Token``` - tokenized words which are referencing to different patterns. The user-input will be identified by different tokens.
+
 ```UserMessageInput``` - new inputs from production. It contains information about chosen pattern. You can label that messages later and include them into the system.
 
 ## GenericRandomResponse
