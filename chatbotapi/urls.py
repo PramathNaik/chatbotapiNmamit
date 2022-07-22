@@ -20,4 +20,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('main.urls'))
 ]
-handler404 = "chatbotapi.views.page_not_found_view"
+handler500 = 'main.views.handler500'

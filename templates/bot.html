@@ -1,0 +1,167 @@
+<html>
+
+<head>
+
+	<!-- seo related -->
+	<title>Nitte Chatbot</title>
+
+	<!-- meta related -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<!-- vendor css & style files -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Open+Sans:300|Oxygen|Material+Icons"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+	<!-- custom css -->
+	<link rel="stylesheet" type="text/css" href="static/main.css">
+
+</head>
+
+<body>
+	{% if messages %}
+	<script>
+	{% for message in messages %}
+	swal("Good job!", "{{ message }}", "{% if message.tags %}{{ message.tags }}{% endif %}");
+	
+	
+	{% endfor %}
+	</script>
+	{% endif %}
+
+
+
+	<div class="container">
+		<div class="alert alert-danger" role="alert">
+			NitteBot is under beta version it may answer inappropriately, if it does send the feedback using the feedback option
+		  </div>
+
+		<div class="row padded_row">
+
+			<!-- right side content -->
+			<div class="col-md-7">
+
+				<div class="chat_window">
+
+					<div class="top_menu">
+						<div class="title">Nitte Chatbot</div>
+					</div>
+
+					<!-- dynamically rendered -->
+					<ul class="messages"></ul>
+					<div style="display: none" class="resp" id="myDIV">
+						<p class="text-center"><b>NitteBot is Thinking...</b></p>
+					  </div>
+
+					<!-- input -->
+					<div class="bottom_wrapper">
+						<div class="form-check form-switch">
+							<input id="checkbox" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+							<p>Narrator</p>
+						  </div>
+						<input id="msg_input" placeholder="Say Hi to begin chat..." />
+						<div id="send_button" class="app_button_1">Send</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- left side content -->
+			<div class="col-md-5">
+				<div class="chat_window">
+
+					<div class="top_menu">
+						<div class="title">Help</div>
+					</div>
+
+					<!-- help container -->
+					<div class="panel-group" id="accordion">
+
+						<!-- help - 1 -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
+										href="#collapse1">Info</a>
+								</h4>
+							</div>
+							<div id="collapse1" class="panel-collapse collapse in">
+								<div class="panel-body">
+									This is a Beta Version Of Chatbot.<br>
+									Developed by Pramath Naik, Shreyas Naik, Manish Naik and Paul Salins under the guidence of Dr.Narendra K.C Assistant Professor Gd-III Electronics and communication
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div class="chat_window">
+
+					<div class="top_menu">
+						<div class="title">Feed Back</div>
+					</div>
+
+					<!-- help container -->
+					<div class="panel-group" id="accordion">
+
+						<!-- help - 1 -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
+										href="#collapse2">Feedback</a>
+								</h4>
+							</div>
+							<div id="collapse2" class="panel-collapse collapse in">
+								<div class="panel-body">
+									<form method="POST">
+										{% csrf_token %}
+										<div class="form-group">
+										  <label for="exampleInputEmail1">Email address</label>
+										  <input required name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+										  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+										</div>
+										<div class="form-group">
+											<label for="exampleInputEmail1">Name</label>
+											<input name="name" required type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
+										  </div>
+										<div class="form-group">
+										  <label for="exampleInputPassword1">Feedback</label>
+										  <textarea required name="feedback" class="form-control" id="exampleInputPassword1" placeholder="Feedback"rows="3"></textarea>
+										</div>
+										<button type="submit" class="btn btn-primary">Submit</button>
+									  </form>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+
+		</div>
+
+
+	</div>
+	
+
+	<!-- vendor script files -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+	</script>
+
+	<!-- custom scripts -->
+	<script src="static/main.js"></script>
+</body>
+</html>

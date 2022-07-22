@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 import os
+import django_heroku
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -24,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-cgkcx0z6dr^y$i_9pvm4pv@4)cjehdu4x!gtgx(wc-38x8&7e_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -32,7 +33,9 @@ ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic',
     'main',
+    'feedback',
     'keywords',
     'rest_framework',
     'simple_chatbot',
@@ -46,6 +49,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -59,7 +63,7 @@ ROOT_URLCONF = 'chatbotapi.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,"templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -110,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
@@ -182,6 +186,35 @@ SIMPLE_CHATBOT = {
         ("main.responses.emailidoftheplacementdepartment","emailidoftheplacementdepartment"),
         ("main.responses.placementsessionusuallystart","placementsessionusuallystart"),
         ("main.responses.activitiesconducted","activitiesconducted"),
+        ("main.responses.WhatNmamit","WhatNmamit"),
+        ("main.responses.howru","howru"),
+        ("main.responses.thank","thank"),
+        ("main.responses.food","food"),
+        ("main.responses.whatcan","whatcan"),
+        ("main.responses.ecHod","ecHod"),
+        ("main.responses.ecInfo","ecInfo"),
+        ("main.responses.aiDaInfo","aiDaInfo"),
+        ("main.responses.aiMlInfo","aiMlInfo"),
+        ("main.responses.aiMlHod","aiMlHod"),
+        ("main.responses.bioInfo","bioInfo"),
+        ("main.responses.bioHod","bioHod"),
+        ("main.responses.civilInfo","civilInfo"),
+        ("main.responses.civilHod","civilHod"),
+        ("main.responses.comCommuInfo","comCommuInfo"),
+        ("main.responses.comCommuHod","comCommuHod"),
+        ("main.responses.csInfo","csInfo"),
+        ("main.responses.csHod","csHod"),
+        ("main.responses.eeInfo","eeInfo"),
+        ("main.responses.eeHod","eeHod"),
+        ("main.responses.isInfo","isInfo"),
+        ("main.responses.isHod","isHod"),
+        ("main.responses.mechInfo","mechInfo"),
+        ("main.responses.mechHod","mechHod"),
+        ("main.responses.roboInfo","roboInfo"),
+        ("main.responses.roboHod","roboHod"),
+        ("main.responses.creaters","creaters"),
     ),
 }
 STATIC_ROOT = os.path.join(BASE_DIR,"static")
+django_heroku.settings(locals())
+#STATICFILES_DIRS = [os.path.join(BASE_DIR,"static"),]

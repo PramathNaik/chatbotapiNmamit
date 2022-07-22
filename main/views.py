@@ -1,23 +1,21 @@
+import random
 from django.http import HttpRequest, HttpResponse, JsonResponse
 from django.shortcuts import render, get_object_or_404
-from main.models import QNA
-
+from feedback.models import feedback
+from django.contrib import messages
 
 # Create your views here.
 def index(request):
-    if request.method == "GET":
-        inData = request.GET.get("data")
-        outData = get_object_or_404(QNA,question__icontains = inData)
-        obj = {"message":outData.answer}
+    if request.method == "POST":
+        name = request.POST['name']
+        email = request.POST['email']
+        feedbacks = request.POST['feedback']
+        feedback.objects.create(name=name,email=email,feedback=feedbacks)
+        messages.add_message(request, messages.SUCCESS, 'Thank You for Your Response')
+    return render(request,"bot.html")
 
-        return JsonResponse(obj)
-    else:
-        obj = {"message":"Not Defined"}
-        return JsonResponse(obj)
-def addxl(request):
-    if request.method == "GET":
-        question = request.GET.get("q")
-        answer = request.GET.get("a")
-        QNA.objects.create(question=question,answer=answer)
-        return HttpResponse("success")
 
+def handler500(request, *args, **argv):
+    msgrsp = ("Did't Get That","Could you please re-phrase that?","What does that mean?")
+    obj = {"message":random.choice(msgrsp)}
+    return JsonResponse(obj)
