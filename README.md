@@ -36,6 +36,9 @@ SIMPLE_CHATBOT = {
     ),
 }
 ```
+# Steps to add tags/patterns(questions)
+- login to admin panel with superuser credentials generated on  ```https://<your_url>/admin```
+- go to ```tags``` menu, tags created from above steps appear there. add multiple question pattern in ```pattern field``` and save ```tokens``` will be generated automatically. 
 # Raw Documentation
 
 ## Database Models
@@ -49,5 +52,5 @@ SIMPLE_CHATBOT = {
 ```UserMessageInput``` - new inputs from production. It contains information about chosen pattern. You can label that messages later and include them into the system.
 
 ## GenericRandomResponse
-> It will choose a generic answer from class property choices.
+- It will choose a generic answer from class property choices.
 
