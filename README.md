@@ -24,8 +24,10 @@ SIMPLE_CHATBOT = {
     ),
 }
 ```
-#Raw Documentation
-##Database Models
+# Raw Documentation
+
+## Database Models
+
 ```Pattern``` - message which might be send by a user. Add a tag to the pattern for being able to identify and response to that message
 ```Tag``` - includes information about Response class for a specific method
 ```Token``` - tokenized words which are referencing to different patterns. The user-input will be identified by different tokens.
