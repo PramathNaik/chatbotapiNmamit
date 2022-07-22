@@ -208,3 +208,18 @@ body {
 	-o-transform: rotate(90deg);
 	transform: rotate(90deg);
 }
+
+.flexContainer {
+    display: flex;
+}
+
+.msg_input {
+    width: 200px;
+    height: 20px;
+    padding-right: 50px;
+}
+.btnp {
+	margin-left: -100px;
+    width: 50px;
+	border-radius: 100%;
+}

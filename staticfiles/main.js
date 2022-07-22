@@ -2,6 +2,14 @@ function getCurrentTimestamp() {
 	return new Date();
 }
 var msg = document.getElementById('myDIV');
+var listen = document.getElementById('listen');
+var btnlisten = document.getElementById('startListen');
+var btnSlisten = document.getElementById('stopListen');
+btnSlisten.style.display = "none";
+btnlisten.style.display = "block";
+
+
+
 msg.style.display = "block"
 function renderMessageToScreen(args) {
 	let displayDate = (args.time || getCurrentTimestamp()).toLocaleString('en-IN', {
@@ -61,7 +69,9 @@ function getCookie(name) {
 }
 const csrftoken = getCookie('csrftoken');
 
+
 $('#send_button').on('click', function (e) {
+	if($('#msg_input').val()){	
 	showUserMessage($('#msg_input').val());
 	msg.style.display = "block"
 	$.ajax({
@@ -78,6 +88,7 @@ $('#send_button').on('click', function (e) {
 			speakthis(data.message);
 		},
 	});
+	}
 	$('#msg_input').val('');
 });
 
@@ -95,10 +106,54 @@ input.addEventListener("keypress", function(event) {
   }
 });
 function speakthis(data) {
-	var check = document.getElementById("checkbox").checked;
-	if(check){
 		var msg = new SpeechSynthesisUtterance(data);
 		window.speechSynthesis.speak(msg);
-	}
-
 }
+
+	let speechRecognition = new webkitSpeechRecognition();
+	let final_transcript = "";
+  
+	speechRecognition.continuous = true;
+	speechRecognition.interimResults = true;
+	speechRecognition.lang = 'en-IN';
+  
+	speechRecognition.onstart = () => {
+		listen.style.display = "block"
+		btnSlisten.style.display = "block";
+		btnlisten.style.display = "none";
+	};
+	speechRecognition.onerror = () => {
+	  console.log("Speech Recognition Error");
+	  btnSlisten.style.display = "none";
+	  btnlisten.style.display = "block";
+	};
+	speechRecognition.onend = () => {
+	  final_transcript = "";
+	  listen.style.display = "none"
+	  btnSlisten.style.display = "none";
+	  btnlisten.style.display = "block";
+	  document.querySelector("#msg_input").placeholder = "Say Hi to begin or Tap on microphone to start conversation...";
+
+	};
+  
+	speechRecognition.onresult = (event) => {
+	  let interim_transcript = "";
+	    
+	  for (let i = event.resultIndex; i < event.results.length; ++i) {
+		if (event.results[i].isFinal) {
+		  final_transcript += event.results[i][0].transcript;
+		  document.querySelector("#msg_input").value = final_transcript;
+		  speechRecognition.stop();
+		  document.getElementById("send_button").click();
+
+		} else {
+		  interim_transcript += event.results[i][0].transcript;
+		}
+	  }
+	  document.querySelector("#msg_input").placeholder = interim_transcript;
+	  final_transcript = ""
+	  interim_transcript = ""
+	};
+  
+
+
