@@ -95,10 +95,45 @@ input.addEventListener("keypress", function(event) {
   }
 });
 function speakthis(data) {
-	var check = document.getElementById("checkbox").checked;
-	if(check){
 		var msg = new SpeechSynthesisUtterance(data);
 		window.speechSynthesis.speak(msg);
-	}
-
 }
+
+	let speechRecognition = new webkitSpeechRecognition();
+	let final_transcript = "";
+  
+	speechRecognition.continuous = true;
+	speechRecognition.interimResults = true;
+	speechRecognition.lang = 'en-IN';
+  
+	speechRecognition.onstart = () => {
+		console.log("Speech Recognition started");
+
+	};
+	speechRecognition.onerror = () => {
+	  console.log("Speech Recognition Error");
+	};
+	speechRecognition.onend = () => {
+	  console.log("Speech Recognition Ended");
+	  final_transcript = "";
+
+	};
+  
+	speechRecognition.onresult = (event) => {
+	  let interim_transcript = "";
+	    
+	  for (let i = event.resultIndex; i < event.results.length; ++i) {
+		if (event.results[i].isFinal) {
+		  final_transcript += event.results[i][0].transcript;
+		} else {
+		  interim_transcript += event.results[i][0].transcript;
+		}
+	  }
+	  document.querySelector("#msg_input").value = final_transcript;
+	  document.querySelector("#msg_input").placeholder = interim_transcript;
+	  final_transcript = ""
+	};
+  
+
+
+
