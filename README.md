@@ -4,17 +4,12 @@ clone the repo using ```git clone "https://github.com/PramathNaik/chatbotapiNmam
 
 ```cd``` to folder ```cd chatbotapi```.
 
-build environment using ```python -m venv env```.
-
-activate environment using ```source env/bin/activate``` for linux and ```env/scripts/activate``` for windows.
-
-install required packages using ```pip install -r requirements.txt```.
-
-create database using ```python manage.py migrate```.
-
-create admin user using ```python manage.py createsuperuser``` and follow the steps.
-
-run server using ```python manage.py runserver```.
+-build environment using ```python -m venv env```.
+-activate environment using ```source env/bin/activate``` for linux and ```env/scripts/activate``` for windows.
+-install required packages using ```pip install -r requirements.txt```.
+-create database using ```python manage.py migrate```.
+-create admin user using ```python manage.py createsuperuser``` and follow the steps.
+-run server using ```python manage.py runserver```.
 
 
 ## Steps to add Responses
