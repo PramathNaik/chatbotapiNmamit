@@ -2,6 +2,8 @@ function getCurrentTimestamp() {
 	return new Date();
 }
 var msg = document.getElementById('myDIV');
+var listen = document.getElementById('listen');
+
 msg.style.display = "block"
 function renderMessageToScreen(args) {
 	let displayDate = (args.time || getCurrentTimestamp()).toLocaleString('en-IN', {
@@ -61,6 +63,7 @@ function getCookie(name) {
 }
 const csrftoken = getCookie('csrftoken');
 
+
 $('#send_button').on('click', function (e) {
 	showUserMessage($('#msg_input').val());
 	msg.style.display = "block"
@@ -107,15 +110,15 @@ function speakthis(data) {
 	speechRecognition.lang = 'en-IN';
   
 	speechRecognition.onstart = () => {
-		console.log("Speech Recognition started");
-
+		listen.style.display = "block"
 	};
 	speechRecognition.onerror = () => {
 	  console.log("Speech Recognition Error");
 	};
 	speechRecognition.onend = () => {
-	  console.log("Speech Recognition Ended");
 	  final_transcript = "";
+	  listen.style.display = "none"
+	  document.querySelector("#msg_input").placeholder = "Say Hi to begin or Tap on microphone to start conversation...";
 
 	};
   
@@ -135,8 +138,11 @@ function speakthis(data) {
 	  }
 	  document.querySelector("#msg_input").placeholder = interim_transcript;
 	  final_transcript = ""
+	  interim_transcript = ""
 	};
   
-
+	$('#speachRec').on('click'), function (e) {
+		speechRecognition.start();
+	};
 
 
