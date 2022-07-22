@@ -125,11 +125,14 @@ function speakthis(data) {
 	  for (let i = event.resultIndex; i < event.results.length; ++i) {
 		if (event.results[i].isFinal) {
 		  final_transcript += event.results[i][0].transcript;
+		  document.querySelector("#msg_input").value = final_transcript;
+		  speechRecognition.stop();
+		  document.getElementById("send_button").click();
+
 		} else {
 		  interim_transcript += event.results[i][0].transcript;
 		}
 	  }
-	  document.querySelector("#msg_input").value = final_transcript;
 	  document.querySelector("#msg_input").placeholder = interim_transcript;
 	  final_transcript = ""
 	};
