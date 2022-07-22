@@ -33,6 +33,6 @@ SIMPLE_CHATBOT = {
 ```Token``` - tokenized words which are referencing to different patterns. The user-input will be identified by different tokens.
 ```UserMessageInput``` - new inputs from production. It contains information about chosen pattern. You can label that messages later and include them into the system.
 
-#GenericRandomResponse
->It will choose a generic answer from class property choices.
+# GenericRandomResponse
+> It will choose a generic answer from class property choices.
 
