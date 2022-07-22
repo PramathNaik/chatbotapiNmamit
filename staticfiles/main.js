@@ -3,6 +3,12 @@ function getCurrentTimestamp() {
 }
 var msg = document.getElementById('myDIV');
 var listen = document.getElementById('listen');
+var btnlisten = document.getElementById('startListen');
+var btnSlisten = document.getElementById('stopListen');
+btnSlisten.style.display = "none";
+btnlisten.style.display = "block";
+
+
 
 msg.style.display = "block"
 function renderMessageToScreen(args) {
@@ -111,13 +117,19 @@ function speakthis(data) {
   
 	speechRecognition.onstart = () => {
 		listen.style.display = "block"
+		btnSlisten.style.display = "block";
+		btnlisten.style.display = "none";
 	};
 	speechRecognition.onerror = () => {
 	  console.log("Speech Recognition Error");
+	  btnSlisten.style.display = "none";
+	  btnlisten.style.display = "block";
 	};
 	speechRecognition.onend = () => {
 	  final_transcript = "";
 	  listen.style.display = "none"
+	  btnSlisten.style.display = "none";
+	  btnlisten.style.display = "block";
 	  document.querySelector("#msg_input").placeholder = "Say Hi to begin or Tap on microphone to start conversation...";
 
 	};
@@ -130,6 +142,8 @@ function speakthis(data) {
 		  final_transcript += event.results[i][0].transcript;
 		  document.querySelector("#msg_input").value = final_transcript;
 		  speechRecognition.stop();
+		  document.getElementById("send_button").click();
+
 		} else {
 		  interim_transcript += event.results[i][0].transcript;
 		}
@@ -137,6 +151,10 @@ function speakthis(data) {
 	  document.querySelector("#msg_input").placeholder = interim_transcript;
 	  final_transcript = ""
 	  interim_transcript = ""
+	};
+  
+	$('#speachRec').on('click'), function (e) {
+		speechRecognition.start();
 	};
 
 
