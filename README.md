@@ -1,9 +1,7 @@
 # NMAMIT CHATBOT Source
 ## Steps to install
-clone the repo using ```git clone "https://github.com/PramathNaik/chatbotapiNmamit.git"```.
-
-```cd``` to folder ```cd chatbotapi```.
-
+- clone the repo using ```git clone "https://github.com/PramathNaik/chatbotapiNmamit.git"```.
+- ```cd``` to folder ```cd chatbotapi```.
 - build environment using ```python -m venv env```.
 - activate environment using ```source env/bin/activate``` for linux and ```env/scripts/activate``` for windows.
 - install required packages using ```pip install -r requirements.txt```.
