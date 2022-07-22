@@ -130,8 +130,6 @@ function speakthis(data) {
 		  final_transcript += event.results[i][0].transcript;
 		  document.querySelector("#msg_input").value = final_transcript;
 		  speechRecognition.stop();
-		  document.getElementById("send_button").click();
-
 		} else {
 		  interim_transcript += event.results[i][0].transcript;
 		}
@@ -139,10 +137,6 @@ function speakthis(data) {
 	  document.querySelector("#msg_input").placeholder = interim_transcript;
 	  final_transcript = ""
 	  interim_transcript = ""
-	};
-  
-	$('#speachRec').on('click'), function (e) {
-		speechRecognition.start();
 	};
 
 
