@@ -16,6 +16,6 @@ def index(request):
 
 
 def handler500(request, *args, **argv):
-    msgrsp = ("Did't Get That","Could you please re-phrase that?","What does that mean?")
+    msgrsp = ("Did't Get That","Could you please re-phrase that?")
     obj = {"message":random.choice(msgrsp)}
     return JsonResponse(obj)
