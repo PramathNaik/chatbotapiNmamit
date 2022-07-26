@@ -84,14 +84,19 @@ WSGI_APPLICATION = 'chatbotapi.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-       'NAME': BASE_DIR / 'db.sqlite3',
-   }
-      
-}
 
+DATABASES = {
+
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dca23n9p06pjst',
+        'USER': 'llgrbhlvovlext',
+        'PASSWORD': '7b04e05445d74298455faa920bd2a058d7b0de39781f8efe601247758c45f06e',
+        'HOST': 'ec2-34-235-198-25.compute-1.amazonaws.com',
+        'PORT': '5432',
+    }
+
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
