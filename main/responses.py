@@ -250,7 +250,7 @@ class ecprasaddur(GenericRandomResponse):
      choices = ("Dr. DURGA PRASAD,you can contact him at  durgaprasad@nitte.edu.in",)
 class ecroopa(GenericRandomResponse):
      choices = ("Dr. ROOPA B HEGDE,you can contact her at roopabhegde@nitte.edu.in",)
- class ecSukesh(GenericRandomResponse):
+class ecSukesh(GenericRandomResponse):
      choices = ("Dr. SUKESH RAO M,you can contact him at sukesh@nitte.edu.in",)
 class ecmamtha(GenericRandomResponse):
      choices = ("Dr. MAMATHA GIRISH,you can contact her at mamatha.girish@nitte.edu.in",)
@@ -258,9 +258,9 @@ class ecsushma(GenericRandomResponse):
      choices = ("Ms. SUSHMA P S,you can contact her at pssushma@nitte.edu.in",)
 class ecshrivid(GenericRandomResponse):
      choices = ("Dr. SHRIVIDYA G,you can contact her at shrividyagp@nitte.edu.in",)
- class ecpadma(GenericRandomResponse):
+class ecpadma(GenericRandomResponse):
      choices = ("Ms. PADMAVATHI,you can contact her at padmavathik@nitte.edu.in",)
- class ecmahaveera(GenericRandomResponse):
+class ecmahaveera(GenericRandomResponse):
      choices = ("Mr. MAHAVEERA K,you can contact him at mahaveera _nmamit@nitte.edu.in",)
 class ecsuni(GenericRandomResponse):
      choices = ("Ms. SUNITHA LASRADO,you can contact her at sunithadsouza@nitte.edu.in",)
