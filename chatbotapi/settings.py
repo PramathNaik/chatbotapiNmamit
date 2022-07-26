@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ["*"]
 # Application definition
 
 INSTALLED_APPS = [
+    'dbbackup',
     'whitenoise.runserver_nostatic',
     'main',
     'feedback',
@@ -45,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
 ]
 
 MIDDLEWARE = [
@@ -85,8 +87,9 @@ WSGI_APPLICATION = 'chatbotapi.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+       'NAME': BASE_DIR / 'db.sqlite3',
+   }
+      
 }
 
 
@@ -128,6 +131,8 @@ STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
+
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 SIMPLE_CHATBOT = {
@@ -218,3 +223,10 @@ SIMPLE_CHATBOT = {
 STATIC_ROOT = os.path.join(BASE_DIR,"static")
 django_heroku.settings(locals())
 #STATICFILES_DIRS = [os.path.join(BASE_DIR,"static"),]
+
+
+
+DBBACKUP_STORAGE = 'storages.backends.ftp.FTPStorage'
+DBBACKUP_STORAGE_OPTIONS = {
+    'location': 'ftp://b12_32247997:$@Nnukakka12@ftp.byethost12.com:21/htdocs'
+}
