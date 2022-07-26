@@ -213,7 +213,23 @@ SIMPLE_CHATBOT = {
         ("main.responses.roboInfo","roboInfo"),
         ("main.responses.roboHod","roboHod"),
         ("main.responses.creaters","creaters"),
-    ),
+        ("main.responses.deanec","deanec"),
+        ("main.responses.ecshet","ecshet"),
+        ("main.responses.ecbhat","ecbhat"),
+        ("main.responses.ecshank","ecshank"),
+        ("main.responses.ecvidyaku","ecvidyaku"),
+        ("main.responses.ecprasaddur","ecprasaddur"),
+        ("main.responses.ecroopa","ecroopa"),
+        ("main.responses.ecmamtha","ecmamtha"),
+        ("main.responses.ecsushma","ecsushma"),
+        ("main.responses.ecshrivid","ecshrivid"),
+        ("main.responses.ecmahaveera","ecmahaveera"),
+        ("main.responses.ecsuni","ecsuni"),
+        ("main.responses.ecsateesh","ecsateesh"),
+        ("main.responses.ecashish","ecashish"),
+       
+       
+        ),
 }
 STATIC_ROOT = os.path.join(BASE_DIR,"static")
 django_heroku.settings(locals())

@@ -166,3 +166,43 @@ class roboHod(GenericRandomResponse):
     choices = ("Dr. MURALIDHARA you can contact him at  drmuralidhara@nitte.edu.in",)
 class creaters(GenericRandomResponse):
     choices = ("If I were you, I would go to the info of the page and look there! ",)
+class deanec(GenericRandomResponse):
+     choices = ("Dr K Rajesh Shetty, you can contact him at krshetty@nitte.edu.in",)
+class ecrekha(GenericRandomResponse):
+     choices = ("Dr Rekha Bhandarkar , you can contact her at rekhabhandarkar@nitte.edu.in",)
+class ecveena(GenericRandomResponse):
+     choices = ("Dr Veena Devi Shastrimath V,you can contact her at veenadevi@nitte.edu.in",)
+class ecprabha(GenericRandomResponse):
+     choices = ("Dr. PRABHA NIRANJAN,you can contact her at prabhan@nitte.edu.in",)
+class ecshiva(GenericRandomResponse):
+     choices = ("Dr. K S SHIVAPRAKASHA,you can contact him at shivaprakasha.ks@nitte.edu.in",)
+class ecshet(GenericRandomResponse):
+     choices = ("Dr. KRISHNANAND SHET,you can contact him at konikrishna@nitte.edu.in",)
+class ecbhat(GenericRandomResponse):
+     choices = ("Dr. SUBRAMANYA BHAT,you can contact him at sbhat22@nitte.edu.in",)
+class ecshank(GenericRandomResponse):
+     choices = ("Dr. SHANKAR B B,you can contact him at shankarbb@nitte.edu.in",)
+class ecvidyaku(GenericRandomResponse):
+     choices = ("Dr. VIDYA KUDVA,you can contact her at vidyakudva@nitte.edu.in ",)
+class ecprasaddur(GenericRandomResponse):
+     choices = ("Dr. DURGA PRASAD,you can contact him at  durgaprasad@nitte.edu.in",)
+class ecroopa(GenericRandomResponse):
+     choices = ("Dr. ROOPA B HEGDE,you can contact her at roopabhegde@nitte.edu.in",)
+ class ecSukesh(GenericRandomResponse):
+     choices = ("Dr. SUKESH RAO M,you can contact him at sukesh@nitte.edu.in",)
+class ecmamtha(GenericRandomResponse):
+     choices = ("Dr. MAMATHA GIRISH,you can contact her at mamatha.girish@nitte.edu.in",)
+class ecsushma(GenericRandomResponse):
+     choices = ("Ms. SUSHMA P S,you can contact her at pssushma@nitte.edu.in",)
+class ecshrivid(GenericRandomResponse):
+     choices = ("Dr. SHRIVIDYA G,you can contact her at shrividyagp@nitte.edu.in",)
+ class ecpadma(GenericRandomResponse):
+     choices = ("Ms. PADMAVATHI,you can contact her at padmavathik@nitte.edu.in",)
+ class ecmahaveera(GenericRandomResponse):
+     choices = ("Mr. MAHAVEERA K,you can contact him at mahaveera _nmamit@nitte.edu.in",)
+class ecsuni(GenericRandomResponse):
+     choices = ("Ms. SUNITHA LASRADO,you can contact her at sunithadsouza@nitte.edu.in",)
+class ecsateesh(GenericRandomResponse):
+     choices = ("Mr. SATHEESH RAO,you can contact him at Satheesh.rao@nitte.edu.in",)
+class ecashish(GenericRandomResponse):
+     choices = ("Dr. ASHISH SINGH,you can contact him at ashishsingh@nitte.edu.in",)
