@@ -9,7 +9,7 @@ class GoodbyeResponse(GenericRandomResponse):
                "Thanks for visiting.",
                "See ya! Have a nice day.",)
 class LocatedResponse(GenericRandomResponse):
-    choices = ("It is located in NMAM Institute of Technology Nitte  Karkala Taluk Udupi 574110,Karnataka, India.",)
+    choices = ("It is located at Nitte  Karkala Taluk Udupi 574110,Karnataka, India.",)
 class establishedResponce(GenericRandomResponse):
     choices = ("1986","It was established in 1986",)
 class nirfrank(GenericRandomResponse):
@@ -21,7 +21,7 @@ class Principle(GenericRandomResponse):
 class website(GenericRandomResponse):
     choices = ("http://nmamit.nitte.edu.in/",)
 class distMangalore(GenericRandomResponse):
-    choices = ("The college is situated in the village of Nitte in an interior area of Udupi district. It is around 57 km (35 mi) from Mangalore. The various departments, laboratories, and hostels are located on a 100-acre (0.40 km2) campus.",)
+    choices = ("The college is around 57 km (35 mi) from Mangalore.",)
 class Alumnis(GenericRandomResponse):
     choices = ("Rakshith Shetty who is an actor in Kannada film industry,Kavya Shetty an actress in Kannada film industry,Nabha Natesh an actress in Film industry,Nischal Shetty the Founder of WazirX",)
 class officialMail(GenericRandomResponse):
@@ -31,11 +31,11 @@ class girlsHostel(GenericRandomResponse):
 class boysHostel(GenericRandomResponse):
     choices = ("Dr. Vishwanatha,Associate Professor, Dept. of Humanities and Chief Warden,NET Hostels,chiefwarden@nmamit.in,9980523407",)
 class TransportationFacilities(GenericRandomResponse):
-    choices = ("The College has a fleet of 32 buses for students and staff from Karkala, Mangaluru, Udupi, Kundapur, Bantwal, Belthangady. Around 900 students from various parts of the region use these bus services for conveyance to and from the College.",)
+    choices = ("The College has a fleet of 32 buses for students and staff from Karkala, Mangaluru, Udupi, Kundapur, Bantwal, Belthangady.",)
 class CanteenFacilities(GenericRandomResponse):
-    choices = ("NMAMIT campus has three main cafeteria where students hangout to eat and chat. Sri Durga Cafeteria is where you get typical south Indian tasty food. It provides a variety of hygienically prepared delicious South Indian, Chinese food, Vegetarian, Non-Vegetarian, Chats, fresh fruit juice and varieties of Ice-creams. Kitchen Bells is another attractive and hygienic place for students to eat where pizzas, burgers, noodles, cakes etc.",)
+    choices = ("NMAMIT campus has three main cafeteria where students hangout to eat and chat. Sri Durga Cafeteria is where you get typical south Indian tasty food. Kitchen Bells is another attractive and hygienic place for students to eat where pizzas, burgers, noodles, cakes etc.",)
 class HealthcareFacilities(GenericRandomResponse):
-    choices = ("Medicare Scheme entitles every student to Medical and Dental treatment. The campus has a medical centre with a qualified physician and trained nurse to treat staff.Medical Centre Timings.Monday to Friday - 9.00 am to 1.00 pm AND 2.00 pm to 4.30 pm,24 hours Ambulance service is available for the students during emergency,Contact Phone No : 08258- 281263",)
+    choices = ("Medicare Scheme entitles every student to Medical and Dental treatment. The campus has a medical centre with a qualified physician and trained nurse to treat staff.Medical Centre Timings. 24 hours Ambulance service is available for the students during emergency,Contact Phone No : 08258- 281263",)
 class contactNumber(GenericRandomResponse):
     choices = ("91-8258-281039",)
 class CampusContacts(GenericRandomResponse):
@@ -65,7 +65,7 @@ class cgpaPlacement(GenericRandomResponse):
 class cgpasuperdream(GenericRandomResponse):
     choices = ("The minimum cgpa required to get into super dream companies is 8.25 with no backlogs.",)
 class recruitmentPolicy(GenericRandomResponse):
-    choices = ("Abhyuday follows a policy of permitting only those students who have very good academic scores to go for a 'Dream' or 'Core' option once placed in a service-based company that recruits people in large numbers. This is shared with students as they enter the campus as freshmen. Many choose to make consistent efforts to achieve academic proficiency. A student with 8.25 CGPA, selected by a large recruiter is permitted to apply for a 'Dream'/ 'Core' company and once selected by a core company, he foregoes the previous offer and remains with the Dream company.While this has been a rule, in 2016, keeping with the times, we made amendments, to include very prestigious brands as 'Super Dream'. A student selected by a Dream Company becomes eligible for a 'Super Dream' company if he clears a series of tests and interviews in college.",)
+    choices = ("Abhyuday follows a policy of permitting only those students who have very good academic scores to go for a 'Dream' or 'Core' option once placed in a service-based company that recruits people in large numbers. This is shared with students as they enter the campus as freshmen. A student with 8.25 CGPA, selected by a large recruiter is permitted to apply for a 'Dream'/ 'Core' company and once selected by a core company, he foregoes the previous offer and remains with the Dream company.While this has been a rule, in 2016, keeping with the times, we made amendments, to include very prestigious brands as 'Super Dream'. A student selected by a Dream Company becomes eligible for a 'Super Dream' company if he clears a series of tests and interviews in college.",)
 class  ProgramsAvailable(GenericRandomResponse):
     choice = ("UNDERGRADUATE (B.TECH),POSTGRADUATE (M.TECH.), POSTGRADUATE (MBA ,MCA) ,DOCTORAL PROGRAMS(PHD) B.SC. (HONORS)",)
 class CoursesAvailablePostgraduate(GenericRandomResponse):
@@ -99,7 +99,7 @@ class generalcategory(GenericRandomResponse):
 class NRIcategory(GenericRandomResponse):
     choices = ("Artificial Intelligence and Machine Learning, Computer and Communication, Information Science, Artificial Intelligence and Data Science (awaiting approval) have a fee structure of 2,50,000 per annum. Robotics and Artificial Intelligence , Mechanical, Electronics and Communication, Electrical and Electronics,Civil , Biotechnology have afee structure of 2,00,000 per annum.",)
 class libraryfacilities(GenericRandomResponse):
-    choices = ("The NMAMIT Central Library is housed in the main wing of the college academic building and open from 8.00 am to 11.00 p.m.The total area of the library is 31000sft and accommodates 750 students at a time.The library is fully automated using ‘KOHA’ , a web enabled open source library automation software.Barcode system is followed for transaction of books and other documents.There are four professional, five technical and six assistants working in different shifts, to assist more than 5000+ user members.The library has a collection of 86947 volumes of text and reference books (as on 27-04-2022).The institute library has also developed a full-fledged Digital Library by installing 25 multimedia computer systems on LAN.The library subscribes to 204 national land international periodicals pertaining to core engineering disciplines, in hard copies.The digital library subscribes to six important resourceful Digital Library and study resources by paying annual membership to VTU consortia, National Digital Library, DELNET, NPTEL etc.,A well furnished Audio/Visual centre provides all sorts of self study digital sources.The e-resources can be accessed across the Wi-Fi campus.Important international professional societies involved in providing scholarly online journals are VTU Consortia Online access service to all the VTU consortia databases like, Elsevier Science Direct, Springer Nature, Taylor and Francies, Emerald, Knimbus,Turnitin.com and Net Analytiks, Sage Management, Inventi Journals, Harward Business Review Full, Value Research India and Proquest-Abi- inform Complete, E-Books preparation platform (Gate etc.,) an assistive tool for formal writing .The biggest Asian library network- ‘DELNET’, having a membership of 7519 technical libraries(Indian 7496+23 abroad) provides millions of information resources and study materials to its member institutions. In this platform hard copies of books, journal articles and other documents are exchanged among member libraries on inter-library-loan service.There is an archive of NPTEL sponsored video lectures.The library spends more than Rs.55.00 lakhs annually on learning resources only in digital form.NMAMIT Library has conducted eight National level Workshops/ Seminars/Conferences and one International conference to the benefit of library professionals.For the best utilization of its available resources, the library has introduced some best practices like Library Awareness Quiz, periodical Book exhibitions. A student front ‘Library and Literary Club’, organizes ‘Library Week’ Celebrations, various literary competitions to inculcate regular reading and writing practice among the student community.The library has user- friendly book-bank facility both for SC/ST and general category students.Reprographic facility, Audio/Visual section, Literature books library, Video lectures of institute faculties are the special attraction.There is separate collection Institutional Repository that includes Institutional conference proceedings, research bulletins, thesis, technical reports, annual college magazines, college calendar and question banks etc.",)
+    choices = ("The NMAMIT Central Library is housed in the main wing of the college academic building and open from 8.00 am to 11.00 p.m.The total area of the library is 31000sft and accommodates 750 students at a time.The library is fully automated using ‘KOHA’ , a web enabled open source library automation software.Barcode system is followed for transaction of books and other documents.There are four professional, five technical and six assistants working in different shifts, to assist more than 5000+ user members.The library has a collection of 86947 volumes of text and reference books (as on 27-04-2022).The institute library has also developed a full-fledged Digital Library by installing 25 multimedia computer systems on LAN.",)
 class Hostelfacilities(GenericRandomResponse):
     choices = ("NMAMIT has separate hostel blocks for Boys and Girls on sharing basis in order to provide a good environment to the students to continue their studies in a healthy and caring atmosphere. Almost 50% of the students stay at Hostels.NMAMIT has 7 boys hostel blocks and 4 girls’ hostel blocks in the campus. Each hostel block is managed under the supervision of a Manager and co-workers at the hostel block. Each room in all the hostels has been furnished with cots, tables, chairs, wardrobe and a ceiling fan.Hostel runs vegetarian and non-vegetarian mess with North Indian and South India food to meet the needs of students from all over the country. Cultural events, self development programs, academic support activities are conducted exclusively to hostel students on regular basis. All the hostel blocks are well connected with 310mbps Campus Wi-Fi network.",)
 class facultymembersoftheplacementdepartment(GenericRandomResponse):
@@ -166,3 +166,23 @@ class roboHod(GenericRandomResponse):
     choices = ("Dr. MURALIDHARA you can contact him at  drmuralidhara@nitte.edu.in",)
 class creaters(GenericRandomResponse):
     choices = ("If I were you, I would go to the info of the page and look there! ",)
+class intake(GenericRandomResponse):
+    choices = ("Total intake is 180 students",)
+class pgintake(GenericRandomResponse):
+    choices = ("Postgraduate program in vlsi design and embedded system with an intake of 18 students",)
+class ecclubs(GenericRandomResponse):
+    choices = ("ELECSA(Department Student Club)",)
+class ecresearchlabs(GenericRandomResponse):
+    choices = ("The research laboratories are PG and Research Laboratory, Texas Instrument Laboratory",)
+class DeptLab(GenericRandomResponse):
+    choices = ("The department laboratories are VLSI laboratory, Power Electronics laboratory, micro controller laboratory etc",)
+class Chapters(GenericRandomResponse):
+    choices = ("ISTE Student Chapter, IEI Chapter, IEEE Student Chapter",)
+class echod(GenericRandomResponse):
+    choices = ("Dr. K V S S S S Sairam",)
+class ecduration(GenericRandomResponse):
+    choices = ("The complete duration is 4 years(8 Semesters)",) 
+class ecSoftwaresavailable(GenericRandomResponse):
+    choices = ("The softwares availale are LABVIEW(Campus liscence), MATLAB R2016b, Cadence, Xilinx",) 
+class ecResearches(GenericRandomResponse):
+    choices = ("Researches on CPR Training Device, Trainer Stethoscope, Generation of ECG Arrhythmias and various product development",)
