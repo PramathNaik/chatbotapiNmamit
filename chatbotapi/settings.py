@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-cgkcx0z6dr^y$i_9pvm4pv@4)cjehdu4x!gtgx(wc-38x8&7e_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -226,7 +226,5 @@ django_heroku.settings(locals())
 
 
 
-DBBACKUP_STORAGE = 'storages.backends.ftp.FTPStorage'
-DBBACKUP_STORAGE_OPTIONS = {
-    'location': 'ftp://b12_32247997:$@Nnukakka12@ftp.byethost12.com:21/htdocs'
-}
+DBBACKUP_STORAGE = 'django.core.files.storage.FileSystemStorage'
+DBBACKUP_STORAGE_OPTIONS = {'location': "static"}
