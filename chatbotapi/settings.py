@@ -223,6 +223,17 @@ SIMPLE_CHATBOT = {
         ("main.responses.roboInfo","roboInfo"),
         ("main.responses.roboHod","roboHod"),
         ("main.responses.creaters","creaters"),
+        ("main.responses.intake","intake"),
+        ("main.responses.pgintake","pgintake"),
+        ("main.responses.ecclubs","ecclubs"),
+        ("main.responses.ecresearchlabs","ecresearchlabs"),
+        ("main.responses.DeptLab","DeptLab"),
+        ("main.responses.echod","echod"),
+        ("main.responses.ecduration","ecduration"),
+        ("main.responses.ecSoftwaresavailable","ecSoftwaresavailable"),
+        ("main.responses.ecResearches","ecResearches"),
+        ("main.responses.ecAreasofResearch","ecAreasofResearch"),
+        
     ),
 }
 STATIC_ROOT = os.path.join(BASE_DIR,"static")
