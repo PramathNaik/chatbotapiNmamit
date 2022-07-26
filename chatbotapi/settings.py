@@ -228,7 +228,6 @@ SIMPLE_CHATBOT = {
         ("main.responses.ecclubs","ecclubs"),
         ("main.responses.ecresearchlabs","ecresearchlabs"),
         ("main.responses.DeptLab","DeptLab"),
-        ("main.responses.echod","echod"),
         ("main.responses.ecduration","ecduration"),
         ("main.responses.ecSoftwaresavailable","ecSoftwaresavailable"),
         ("main.responses.ecResearches","ecResearches"),

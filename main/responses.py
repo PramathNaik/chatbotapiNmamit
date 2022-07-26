@@ -178,8 +178,6 @@ class DeptLab(GenericRandomResponse):
     choices = ("The department laboratories are VLSI laboratory, Power Electronics laboratory, micro controller laboratory etc",)
 class Chapters(GenericRandomResponse):
     choices = ("ISTE Student Chapter, IEI Chapter, IEEE Student Chapter",)
-class echod(GenericRandomResponse):
-    choices = ("Dr. K V S S S S Sairam",)
 class ecduration(GenericRandomResponse):
     choices = ("The complete duration is 4 years(8 Semesters)",) 
 class ecSoftwaresavailable(GenericRandomResponse):
