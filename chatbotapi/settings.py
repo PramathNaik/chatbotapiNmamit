@@ -266,8 +266,14 @@ SIMPLE_CHATBOT = {
         ("main.responses.ecshrivid","ecshrivid"),
         ("main.responses.ecmahaveera","ecmahaveera"),
         ("main.responses.ecsuni","ecsuni"),
-        ("main.responses.ecsateesh","ecsateesh"),
-        ("main.responses.ecashish","ecashish"),
+        ("main.responses.ecprabha","ecprabha"),
+        ("main.responses.ecshiva","ecshiva"),
+        ("main.responses.ecpadma","ecpadma"),
+        ("main.responses.ecrekha","ecrekha"),
+         ("main.responses.ecashish","ecashish"),
+       
+
+
         
     ),
 }
