@@ -191,80 +191,120 @@ class chaptersec(GenericRandomResponse):
 class lavanyaec(GenericRandomResponse):
     choices = ("Ms Lavanya,Assistant Professor,you can contact her at lavanya.bl@nitte.edu.in",)
 class harshitaec(GenericRandomResponse):
-    choices = ("Ms. HARSHITHA BHAT, you can contact her at harshithabhat@nitte.edu.in ",)
+    choices = ("Ms. HARSHITHA BHAT, Assistant Professor of ECE department,you can contact her at harshithabhat@nitte.edu.in ",)
 class shankariec(GenericRandomResponse):
-    choices = ("Ms. Shankari, you can contact her at shankarimn@nitte.edu.in ",)
+    choices = ("Ms. Shankari, Assistant Professor of ECE department,you can contact her at shankarimn@nitte.edu.in ",)
 class ashwiniec(GenericRandomResponse):
-    choices = ("Ms. ASHWINI K, you can contact her at ashwinik@nitte.edu.in ",)
+    choices = ("Ms. ASHWINI K, Assistant Professor of ECE department,you can contact her at ashwinik@nitte.edu.in ",)
 class ramyaec(GenericRandomResponse):
-    choices = ("Ms. RAMYA SHETTY, you can contact her at  ramyahegdep@nitte.edu.in",)
+    choices = ("Ms. RAMYA SHETTY, Assistant Professor of ECE department,you can contact her at  ramyahegdep@nitte.edu.in",)
 class kavithaec(GenericRandomResponse):
-    choices = ("Ms. KAVITHA S, you can contact her at kavitha@nitte.edu.in ",)
+    choices = ("Ms. KAVITHA S, Assistant Professor of ECE department,you can contact her at kavitha@nitte.edu.in ",)
 class karthikec(GenericRandomResponse):
-    choices = ("Mr. KARTHIK, you can contact him at karthikamin@nitte.edu.in ",)
+    choices = ("Mr. KARTHIK, Assistant Professor of ECE department,you can contact him at karthikamin@nitte.edu.in ",)
 class bommegec(GenericRandomResponse):
-    choices = ("Mr. BOMMEGOWDA K B, you can contact him at bgowda_kbl@nitte.edu.in",)
+    choices = ("Mr. BOMMEGOWDA K B, Assistant Professor of ECE department,you can contact him at bgowda_kbl@nitte.edu.in",)
 class prajwalec(GenericRandomResponse):
-    choices = ("Mr. PRAJWAL HEGDE N you can contact him at  prajwal.hegde@nitte.edu.in",)
+    choices = ("Mr. PRAJWAL HEGDE N ,Assistant Professor of ECE department,you can contact him at  prajwal.hegde@nitte.edu.in",)
 class naguec(GenericRandomResponse):
-    choices = ("Ms.NAGAPRIYA KAMATH, you can contact her at  nagapriyakamath@nitte.edu.in",)
+    choices = ("Ms.NAGAPRIYA KAMATH, Assistant Professor of ECE department,you can contact her at  nagapriyakamath@nitte.edu.in",)
 class dileepec(GenericRandomResponse):
-    choices = ("Mr. DILEEP KUMAR M J, you can contact him at dileepmj@nitte.edu.in",)
+    choices = ("Mr. DILEEP KUMAR M J,Assistant Professor of ECE department, you can contact him at dileepmj@nitte.edu.in",)
 class anilec(GenericRandomResponse):
-    choices = ("Mr. ANIL KUMAR BHAT, you can contact him at  anilkumarbhat@nitte.edu.in",)
+    choices = ("Mr. ANIL KUMAR BHAT, Assistant Professor of ECE department,you can contact him at  anilkumarbhat@nitte.edu.in",)
 class shubhaec(GenericRandomResponse):
-    choices = ("Ms. SHUBHA B, you can contact her at shubhab@nitte.edu.in",)
+    choices = ("Ms. SHUBHA B,Assistant Professor of ECE department, you can contact her at shubhab@nitte.edu.in",)
 class nijuec(GenericRandomResponse):
-    choices = ("Ms. NIJU RAJAN, you can contact her at nijurajan@nitte.edu.in",)
+    choices = ("Ms. NIJU RAJAN, Assistant Professor of ECE department,you can contact her at nijurajan@nitte.edu.in",)
 class charishmaec(GenericRandomResponse):
-    choices = ("Ms. CHARISHMA, you can contact her at shettycharishma@nitte.edu.in",)
+    choices = ("Ms. CHARISHMA, Assistant Professor of ECE department,you can contact her at shettycharishma@nitte.edu.in",)
 class pradymunaec(GenericRandomResponse):
-    choices = ("Mr. PRADYUMNA G R, you can contact him a pradyumna@nitte.edu.in",)
+    choices = ("Mr. PRADYUMNA G R, Assistant Professor of ECE department,you can contact him a pradyumna@nitte.edu.in",)
 class raviec(GenericRandomResponse):
-    choices = ("Mr. RAVINDRA K S, you can contact him at  ravindraks@nitte.edu.in",)
+    choices = ("Mr. RAVINDRA K S, Assistant Professor of ECE department,you can contact him at  ravindraks@nitte.edu.in",)
 class anuec(GenericRandomResponse):
-    choices = ("Dr. ANUSHA R, you can contact her at anushar@nitte.edu.in",)
+    choices = ("Dr. ANUSHA R, Assistant Professor of ECE department,you can contact her at anushar@nitte.edu.in",)
 class shivakumec(GenericRandomResponse):
-    choices = ("Dr. SHIVAKUMAR B R, you can contact him at  shivkumarbr@nitte.edu.in",)
+    choices = ("Dr. SHIVAKUMAR B R, Assistant Professor of ECE department,you can contact him at  shivkumarbr@nitte.edu.in",)
 class narendec(GenericRandomResponse):
-    choices = ("Dr. NARENDRA K C, you can contact him at narendra@nitte.edu.in",)
+    choices = ("Dr. NARENDRA K C, Assistant Professor of ECE department,you can contact him at narendra@nitte.edu.in",)
 class deanec(GenericRandomResponse):
-     choices = ("Dr K Rajesh Shetty, you can contact him at krshetty@nitte.edu.in",)
+     choices = ("Dr K Rajesh Shetty, Assistant Professor of ECE department,you can contact him at krshetty@nitte.edu.in",)
 class ecrekha(GenericRandomResponse):
-     choices = ("Dr Rekha Bhandarkar , you can contact her at rekhabhandarkar@nitte.edu.in",)
+     choices = ("Dr Rekha Bhandarkar ,Assistant Professor of ECE department, you can contact her at rekhabhandarkar@nitte.edu.in",)
 class ecveena(GenericRandomResponse):
-     choices = ("Dr Veena Devi Shastrimath V,you can contact her at veenadevi@nitte.edu.in",)
+     choices = ("Dr Veena Devi Shastrimath V,Assistant Professor of ECE department,you can contact her at veenadevi@nitte.edu.in",)
 class ecprabha(GenericRandomResponse):
-     choices = ("Dr. PRABHA NIRANJAN,you can contact her at prabhan@nitte.edu.in",)
+     choices = ("Dr. PRABHA NIRANJAN,Assistant Professor of ECE department,you can contact her at prabhan@nitte.edu.in",)
 class ecshiva(GenericRandomResponse):
-     choices = ("Dr. K S SHIVAPRAKASHA,you can contact him at shivaprakasha.ks@nitte.edu.in",)
+     choices = ("Dr. K S SHIVAPRAKASHA,Assistant Professor of ECE department,you can contact him at shivaprakasha.ks@nitte.edu.in",)
 class ecshet(GenericRandomResponse):
-     choices = ("Dr. KRISHNANAND SHET,you can contact him at konikrishna@nitte.edu.in",)
+     choices = ("Dr. KRISHNANAND SHET,Assistant Professor of ECE department,you can contact him at konikrishna@nitte.edu.in",)
 class ecbhat(GenericRandomResponse):
-     choices = ("Dr. SUBRAMANYA BHAT,you can contact him at sbhat22@nitte.edu.in",)
+     choices = ("Dr. SUBRAMANYA BHAT,Assistant Professor of ECE department,you can contact him at sbhat22@nitte.edu.in",)
 class ecshank(GenericRandomResponse):
-     choices = ("Dr. SHANKAR B B,you can contact him at shankarbb@nitte.edu.in",)
+     choices = ("Dr. SHANKAR B B,Assistant Professor of ECE department,you can contact him at shankarbb@nitte.edu.in",)
 class ecvidyaku(GenericRandomResponse):
-     choices = ("Dr. VIDYA KUDVA,you can contact her at vidyakudva@nitte.edu.in ",)
+     choices = ("Dr. VIDYA KUDVA,Assistant Professor of ECE department,you can contact her at vidyakudva@nitte.edu.in ",)
 class ecprasaddur(GenericRandomResponse):
-     choices = ("Dr. DURGA PRASAD,you can contact him at  durgaprasad@nitte.edu.in",)
+     choices = ("Dr. DURGA PRASAD,Assistant Professor of ECE department,you can contact him at  durgaprasad@nitte.edu.in",)
 class ecroopa(GenericRandomResponse):
-     choices = ("Dr. ROOPA B HEGDE,you can contact her at roopabhegde@nitte.edu.in",)
+     choices = ("Dr. ROOPA B HEGDE,Assistant Professor of ECE department,you can contact her at roopabhegde@nitte.edu.in",)
 class ecSukesh(GenericRandomResponse):
-     choices = ("Dr. SUKESH RAO M,you can contact him at sukesh@nitte.edu.in",)
+     choices = ("Dr. SUKESH RAO M,Assistant Professor of ECE department,you can contact him at sukesh@nitte.edu.in",)
 class ecmamtha(GenericRandomResponse):
-     choices = ("Dr. MAMATHA GIRISH,you can contact her at mamatha.girish@nitte.edu.in",)
+     choices = ("Dr. MAMATHA GIRISH,Assistant Professor of ECE department,you can contact her at mamatha.girish@nitte.edu.in",)
 class ecsushma(GenericRandomResponse):
-     choices = ("Ms. SUSHMA P S,you can contact her at pssushma@nitte.edu.in",)
+     choices = ("Ms. SUSHMA P S,Assistant Professor of ECE department,you can contact her at pssushma@nitte.edu.in",)
 class ecshrivid(GenericRandomResponse):
-     choices = ("Dr. SHRIVIDYA G,you can contact her at shrividyagp@nitte.edu.in",)
+     choices = ("Dr. SHRIVIDYA G,Assistant Professor of ECE department,you can contact her at shrividyagp@nitte.edu.in",)
 class ecpadma(GenericRandomResponse):
-     choices = ("Ms. PADMAVATHI,you can contact her at padmavathik@nitte.edu.in",)
+     choices = ("Ms. PADMAVATHI,Assistant Professor of ECE department,you can contact her at padmavathik@nitte.edu.in",)
 class ecmahaveera(GenericRandomResponse):
-     choices = ("Mr. MAHAVEERA K,you can contact him at mahaveera _nmamit@nitte.edu.in",)
+     choices = ("Mr. MAHAVEERA K,Assistant Professor of ECE department,you can contact him at mahaveera _nmamit@nitte.edu.in",)
 class ecsuni(GenericRandomResponse):
-     choices = ("Ms. SUNITHA LASRADO,you can contact her at sunithadsouza@nitte.edu.in",)
+     choices = ("Ms. SUNITHA LASRADO,Assistant Professor of ECE department,you can contact her at sunithadsouza@nitte.edu.in",)
 class ecsateesh(GenericRandomResponse):
-     choices = ("Mr. SATHEESH RAO,you can contact him at Satheesh.rao@nitte.edu.in",)
+     choices = ("Mr. SATHEESH RAO,Assistant Professor of ECE department,you can contact him at Satheesh.rao@nitte.edu.in",)
 class ecashish(GenericRandomResponse):
-     choices = ("Dr. ASHISH SINGH,you can contact him at ashishsingh@nitte.edu.in",)
+     choices = ("Dr. ASHISH SINGH,Assistant Professor of ECE department,you can contact him at ashishsingh@nitte.edu.in",)
+class lavanyaec(GenericRandomResponse):
+    choices = ("Ms Lavanya,Assistant Professor of ECE department,you can contact her at lavanya.bl@nitte.edu.in",)
+class harshitaec(GenericRandomResponse):
+    choices = ("Ms. HARSHITHA BHAT, Assistant Professor of ECE department ,you can contact her at harshithabhat@nitte.edu.in ",)
+class shankariec(GenericRandomResponse):
+    choices = ("Ms. Shankari, Assistant Professor of ECE department ,you can contact her at shankarimn@nitte.edu.in ",)
+class ashwiniec(GenericRandomResponse):
+    choices = ("Ms. ASHWINI K,Assistant Professor of ECE department , you can contact her at ashwinik@nitte.edu.in ",)
+class ramyaec(GenericRandomResponse):
+    choices = ("Ms. RAMYA SHETTY, Assistant Professor of ECE department , you can contact her at  ramyahegdep@nitte.edu.in",)
+class kavithaec(GenericRandomResponse):
+    choices = ("Ms. KAVITHA S,Assistant Professor of ECE department ,  you can contact her at kavitha@nitte.edu.in ",)
+class karthikec(GenericRandomResponse):
+    choices = ("Mr. KARTHIK, Assistant Professor of ECE department , you can contact him at karthikamin@nitte.edu.in ",)
+class bommegec(GenericRandomResponse):
+    choices = ("Mr. BOMMEGOWDA K B, Assistant Professor of ECE department , you can contact him at bgowda_kbl@nitte.edu.in",)
+class prajwalec(GenericRandomResponse):
+    choices = ("Mr. PRAJWAL HEGDE N ,Assistant Professor of ECE department , you can contact him at  prajwal.hegde@nitte.edu.in",)
+class naguec(GenericRandomResponse):
+    choices = ("Ms.NAGAPRIYA KAMATH, Assistant Professor of ECE department , you can contact her at  nagapriyakamath@nitte.edu.in",)
+class dileepec(GenericRandomResponse):
+    choices = ("Mr. DILEEP KUMAR M J,Assistant Professor of ECE department ,  you can contact him at dileepmj@nitte.edu.in",)
+class anilec(GenericRandomResponse):
+    choices = ("Mr. ANIL KUMAR BHAT, Assistant Professor of ECE department , you can contact him at  anilkumarbhat@nitte.edu.in",)
+class shubhaec(GenericRandomResponse):
+    choices = ("Ms. SHUBHA B, Assistant Professor of ECE department , you can contact her at shubhab@nitte.edu.in",)
+class nijuec(GenericRandomResponse):
+    choices = ("Ms. NIJU RAJAN, Assistant Professor of ECE department , you can contact her at nijurajan@nitte.edu.in",)
+class charishmaec(GenericRandomResponse):
+    choices = ("Ms. CHARISHMA,Assistant Professor of ECE department ,  you can contact her at shettycharishma@nitte.edu.in",)
+class pradymunaec(GenericRandomResponse):
+    choices = ("Mr. PRADYUMNA G R, Assistant Professor of ECE department , you can contact him a pradyumna@nitte.edu.in",)
+class raviec(GenericRandomResponse):
+    choices = ("Mr. RAVINDRA K S, Assistant Professor of ECE department , you can contact him at  ravindraks@nitte.edu.in",)
+class anuec(GenericRandomResponse):
+    choices = ("Dr. ANUSHA R, Assistant Professor of ECE department , you can contact her at anushar@nitte.edu.in",)
+class shivakumec(GenericRandomResponse):
+    choices = ("Dr. SHIVAKUMAR B R, Assistant Professor of ECE department , you can contact him at  shivkumarbr@nitte.edu.in",)
+class narendec(GenericRandomResponse):
+    choices = ("Dr. NARENDRA K C, Assistant Professor of ECE department , you can contact him at narendra@nitte.edu.in",)
